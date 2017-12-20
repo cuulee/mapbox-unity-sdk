@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Included Examples | Mapbox SDK for Unity </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Included Examples | Mapbox SDK for Unity ">
+    <meta name="generator" content="docfx 2.14.1.0">
+    
+    <link rel="shortcut icon" href="../docs/images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../docs/images/mapbox-logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+              <h1 id="included-examples">Included Examples</h1>
+              
+<p>For each example, associated scripts and resources can be found in the same root directory as the scene itself. In addition to the bundled examples, you can find tutorials <a href="https://www.mapbox.com/unity-sdk/tutorials/">here</a>.</p>
+<h2 id="explorer">Explorer</h2>
+<p>This is a master example that allows you to explore Mapbox’s location data and the Map Editor. You can see a variety of data layers associated with Mapbox’s vector tiles, including building data, points of interest (POIs), roads, and real-time traffic data. Each map vector tile includes high levels of detail about a particular location or building in GeoJSON format that you can leverage for procedurally generating experiences or styling. You can toggle these data layers on and off as needed in the Map Editor (access through the Mapbox menu). </p>
+<p>Mapbox has worldwide data coverage so you can create truly global game levels, AR experiences, and apps. Search anywhere in the world to explore the maps and location data you have available to you. </p>
+<h2 id="globe">Globe</h2>
+<p>This example demonstrates a procedurally generated globe model leveraging Mapbox’s global coverage map data. The custom markers showcase how to drop pins according to exact world coordinates. The example also uses a special terrain factor that spherically projects our square tiles onto the globe. </p>
+<h2 id="locationprovider-a-location-based-game-or-app-template">LocationProvider: A Location-based Game or App Template</h2>
+<p>This is a starting point for a location-based game or app. We’re dropping a pin at your location on a 2D map that includes building data outlines and other procedurally generated geo features from Mapbox’s data that you can toggle and style as needed. We’ve created a fun map style in Mapbox Studio for this example - and so can you. This example also includes an update that allows you to zoom in and out, and the map updates accordingly. </p>
+<h2 id="playground-example-set">Playground Example Set</h2>
+<h3 id="playground--directions">PlayGround &gt; Directions</h3>
+<p>This example showcases leveraging Mapbox’s Search and Navigation APIs in Unity to get directions worldwide.</p>
+<p>Enter a start location query (eg. &quot;San Francisco, CA&quot;), this is a forward geocode request. Then enter a destination query (eg. &quot;Los Angeles, CA&quot;), this is also a forward geocode request.</p>
+<p>When the geocode requests have been completed, a directions request is executed. A new request is sent every time the start or destination user input fields are edited.</p>
+<p>Directions results will be logged to the UI when they are available (in the form of JSON).</p>
+<h3 id="playground--forward-geocoder">PlayGround &gt; Forward Geocoder</h3>
+<p>This example showcases leveraging Mapbox’s Search API to do a forward geocoding request, which means querying a place by name and getting all of its GeoJSON data. A new request is sent every time the user input field is edited.</p>
+<p>Visit Mapbox’s API documentation for more information.</p>
+<h3 id="playground--rastertile">PlayGround &gt; RasterTile</h3>
+<p>Uses a forward geocoder request (search a location by name, not coordinates) to fetch a styled raster tile from. You can change the map styling in the dropdown (and import your own through Mapbox Studio) . A new request is sent whenever the zoom or style are changed, or when the user input field is edited.</p>
+<p>See: <a href="https://www.mapbox.com/help/define-style/">https://www.mapbox.com/help/define-style/</a>
+See: <a href="https://www.mapbox.com/api-documentation/#retrieve-raster-tiles-from-styles">https://www.mapbox.com/api-documentation/#retrieve-raster-tiles-from-styles</a></p>
+<h3 id="playground--reverse-geocoder">PlayGround &gt; Reverse Geocoder</h3>
+<p>This example showcases leveraging Mapbox’s Search API to do a reverse geocoding request, which means querying a place by latitude and longitude string to get all of the features associated with that location. A new request is sent every time the user input field is edited.</p>
+<p>Visit Mapbox’s API documentation for more information.</p>
+<h3 id="playground--vector-tile">PlayGround &gt; Vector Tile</h3>
+<p>This example shows using a forward geocoder request (search by location name, not coordinates) to fetch a vector tile. You can leverage vector tile data to do things like procedurally generate decorations or experiences based on building heights, land features, etc. In this example, the result is printed as GeoJSON with a feature collection. A new request is sent whenever the user input field is edited.</p>
+<p>Visit Mapbox’s API documentation for more information.</p>
+<h2 id="vectortilemaps-example-set">VectorTileMaps Example Set</h2>
+<h3 id="vectortilemaps--basicvectormap-3d-buildings-from-vector-tile-data">VectorTileMaps &gt; BasicVectorMap: 3D Buildings from Vector Tile Data</h3>
+<p>This example shows how we extrude 3D buildings from the building height data contained in a vector tile. Mapbox’s vector tiles include a wide array of data about locations that you can leverage. </p>
+<h3 id="vectortilemaps--interactivestyledvectormap-styling-based-on-vector-tile-data">VectorTileMaps &gt; InteractiveStyledVectorMap: Styling Based on Vector Tile Data</h3>
+<p>This is a vector tile map where you can interact with individual buildings to show their associated information (contained in the vector tile). This example also shows how to procedurally decorate land use and how to render building types differently based on their classification. </p>
+<h3 id="vectortilemaps--poivectormap-points-of-interest">VectorTileMaps &gt; PoiVectorMap: Points of Interest</h3>
+<p>This is a vector tile map showcasing Point of Interest (<code>poi_label</code>) markers. Mapbox’s (streets-v7) vector tile set includes POIs you can leverage or you can import your own custom data sets to create custom POIs through Mapbox Studio. </p>
+<h3 id="vectortilemaps--terrainvectormap-vector-data-on-top-of-3d-terrain">VectorTileMaps &gt; TerrainVectorMap: Vector Data on Top of 3D Terrain</h3>
+<p>This is a vector tile map with terrain data turned on (we use a separate terrain factory and then we snap vector tile features to the extruded terrain mesh). Mapbox has worldwide terrain data coverage. You can also use terrain data with raster tiles to superimpose satellite imagery over the elevation data to create real world elevation models. </p>
+<h2 id="voxelmap-real-world-data-minecraft-inspired-map">VoxelMap: Real World Data, Minecraft-inspired Map</h2>
+<h2 id="voxelmap-real-world-data-minecraft-inspired-map-1">VoxelMap: Real World Data, Minecraft-inspired Map</h2>
+<p>This Minecraft-inspired example demonstrates a less traditional way to consume Mapbox data for maps or world construction.</p>
+<p>VoxelTile is responsible for fetching both a styled raster tile and a mapbox.terrain-rgb (global elevation) tile. The styled raster pixels are sampled to determine which voxels to generate, via the VoxelFetcher. This is achieved using a nearest color formula. The elevation tile pixels are sampled to determine where to vertically place the voxels.</p>
+<p>Zoom: the zoom level at which to request the tiles.</p>
+<p>Elevation Multiplier: used to exaggerate the real-world height.</p>
+<p>Voxel Depth Padding: determine how many voxels to spawn below the designated height. This helps fill holes in environments with extreme elevation variations.</p>
+<p>Tile Width in Voxels: How many voxels to generate across each tile. This will affect the detail of the world. Raster textures are downsampled according to this value.</p>
+<p>Voxel Batch Count: The number of voxels to spawn at once. Keep this number low to prevent locking the main thread during construction.</p>
+<h2 id="zoomablemap-worldwide-dynamic-zoom--panning-support">ZoomableMap: Worldwide Dynamic Zoom &amp; Panning Support</h2>
+<p>This example is a starting point for creating a traditional web-based zoomable map. Go anywhere in the world and check out Mapbox’s high-quality satellite imagery. </p>
+
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/mapbox/mapbox-unity-sdk/blob/refactoring-experiments/documentation/docs/03-examples.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            &#0169; 2017 Mapbox
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
